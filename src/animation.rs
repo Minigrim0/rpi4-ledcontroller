@@ -2,13 +2,9 @@ use rs_ws281x::Controller;
 
 pub trait Animation {
     /// Computes and renders the next frame of the animation to the controller
-    /// 
-    /// # Arguments
-    /// 
+    /// ## Arguments
     /// * `controller` - The controller to render the next frame to
-    /// 
-    /// # Returns
-    /// 
+    /// ## Returns
     /// * `bool` - True if the animation is still running, false otherwise
     fn next_frame(&mut self, controller: &mut Controller) -> bool;
 
